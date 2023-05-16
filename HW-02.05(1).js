@@ -468,17 +468,21 @@ switch(symbol){
 
 //8.*  Використовуючи властивості рядків (тип string), та регулярний вираз (regular expression) видалити голосні букви зі слова.
 
-const arrowFunc = (noVowels) => {
-    const str = 'Hello Beautiful World';
-    const noVowels = str.replace(/[eoaui]/gi, '');
-    console.log(noVowels);
+const f1 = (text) => {
+    return text.replace(/[eoaui]/gi, '');
 }
-arrowFunc ();
+console.log(f1('Hello Beautiful World'))
 
 
-const str = 'Hello Beautiful World';
-const noVowels = str.replace(/[eoaui]/gi, '');
-console.log(noVowels); 
+const f1 = (text) => {
+    console.log(text.replace(/[eoaui]/gi, ''));
+}
+f1('Hello Beautiful World')
+
+
+const str1 = 'Hello Beautiful World';
+const noVowels1 = str1.replace(/[eoaui]/gi, '');
+console.log(noVowels1); 
 
 //9.*  Використовуючи оператор if реалізувати логіку переводу метрів в кілометри,
 //так щоб в консоль виводився результат обчислень з правильним закінченням.
